@@ -1,0 +1,130 @@
+.login {
+    width: 500px;
+    height: 500px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+h2 {
+    color: #868787;
+    font-family: sans-serif;
+}
+
+.login input {
+    width: 400px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 20px;
+}
+
+.dang_nhap {
+    width: 400px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    border: none;
+    background-color: #03a9f4;
+    color: white;
+}
+
+.login button:hover {
+    font-size: 15px;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: table;
+    text-align: center;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.login {
+    display: table;
+    /* shrinks to fit content */
+    margin: auto;
+}
+
+.quen_mk {
+    width: 400px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    color: #8ad2ff;
+
+}
+
+.quen_mk:hover {
+    width: 225px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    color: black;
+}
+
+.dang_nhap_fb {
+    width: 230px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    border: none;
+    background-color: #4267b2;
+    color: white;
+    margin-top: 25px;
+}
+
+.dang_nhap_google {
+    width: 230px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    border: none;
+    background-color: #dc4e41;
+    color: white;
+    margin-top: 25px;
+    margin-left: 8px;
+}
+
+.dang_nhap_yahoo {
+    width: 230px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    border: none;
+    background-color: #8921b4;
+    color: white;
+    margin-top: 25px;
+}
+
+.dang_nhap_apple {
+    width: 230px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    border: none;
+    background-color: #131212;
+    color: white;
+    margin-top: 25px;
+    margin-left: 8px;
+}
+.mat_khau{
+    width: 170px !important;
+    margin-right: 58px;
+}
+.xac_minh_mk{
+    width: 150px !important;
+}

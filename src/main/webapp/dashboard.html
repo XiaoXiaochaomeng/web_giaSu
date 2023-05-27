@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimun-scale=1,maximum-scale=1, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/main/webapp/css/styles.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <input type="checkbox" id="menu-toggle">
+    <div class="khoiben">
+        <div class="brand">
+            <span class="lab la-affiliatetheme">CA</span>
+            <h2>ArtStart</h2>
+        </div>
+        <div class="menu-khoiben">
+            <div class="khoiben-user">
+                <div class="khoiben-anh" style="background-image: url(/src/main/webapp/anhthe1.png);"></div>
+                <div class="user">
+                    <small>Software Developer</small>
+                    <p>Tuan Anh</p>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a href="" class="activate">
+                        <span class="las la-home-scale"></span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="">
+                        <span class="las la-home"></span>
+                        <span>Finance</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-chart-pie"></span>
+                        <span>Analytics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-calendar"></span>
+                        <span>Calendar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-users"></span>
+                        <span>Contacts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-shopping-cart"></span>
+                        <span>Ecommerce</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-envelope"></span>
+                        <span>Mailbox</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-check-circle"></span>
+                        <span>Tasks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-lock"></span>
+                        <span>Authentication</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-file-invoice-dollar"></span>
+                        <span>Pricing</span>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="noidungchinh">
+        <header>
+            <label for="menu-toggle" class="menu-toggler">
+                <span class="las la-bars follow"></span>
+            </label>
+            <div class="search">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="Enter keyword">
+            </div>
+            <div class="icons-dau">
+                <span class="las la-bell"></span>
+                <span class="las la-bookmark"></span>
+                <span class="las la-comment"></span>
+            </div>
+        </header>
+        <main>
+            <div class="nhieuthe">
+                <div class="the">
+                    <div class="icon-the follow">
+                        <span class="las la-users"></span>
+                    </div>
+                    <div class="thongtin-the">
+                        <h2 class="total-branch">0</h2>
+                        <small>Chi nhánh</small>
+                    </div>
+                    <!-- <div class="anh-the">
+                        <div style="background-image: url(/src/main/webapp/anhthe1.png);"></div>
+                        <div style="background-image: url(/src/main/webapp/anhthe1.png);"></div>
+                        <div style="background-image: url(/src/main/webapp/anhthe1.png);"></div>
+                        <div style="background-image: url(/src/main/webapp/anhthe1.png);"></div>
+                        <div style="background-image: url(/src/main/webapp/anhthe1.png);"></div>
+                    </div> -->
+                </div>
+                <div class="the">
+                    <div class="icon-the comments">
+                        <span class="las la-comment"></span>
+                    </div>
+                    <div class="thongtin-the">
+                        <h2>661</h2>
+                        <small>Điện thoại được bán bởi Lê Tuấn Anh trong ngày 20/01/2023</small>
+                    </div>
+                    <!-- <div class="anh-the">
+                        <div style="background-image: url(/src/main/webapp/anhthe1.png);"></div>
+                        <div style="background-image: url(/src/main/webapp/anhthe1.png);"></div>
+                        <div style="background-image: url(/src/main/webapp/anhthe1.png);"></div>
+                        <div style="background-image: url(/src/main/webapp/anhthe1.png);"></div>
+                        <div style="background-image: url(/src/main/webapp/anhthe1.png);"></div>
+                    </div> -->
+                </div>
+                <div class="the">
+                    <div class="icon-the likes">
+                        <span class="las la-heart"></span>
+                    </div>
+                    <div class="thongtin-the">
+                        <h2>19,855</h2>
+                        <small>Số nhân viên thuộc chi nhánh Hà Nội tham gia bán hàng vào ngày 20/01/2023</small>
+                    </div>
+                    <!-- <div class="anh-the">
+                        <div style="background-image: url(/src/main/webapp/anhthe1.png);"></div>
+                        <div style="background-image: url(/src/main/webapp/anhthe1.png);"></div>
+                        <div style="background-image: url(/src/main/webapp/anhthe1.png);"></div>
+                        <div style="background-image: url(/src/main/webapp/anhthe1.png);"></div>
+                        <div style="background-image: url(/src/main/webapp/anhthe1.png);"></div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="chart-grid">
+                <div class="chart-follow">
+                    <div class="chart-head">
+                        <h3>Total phone sales</h3>
+                        <span class="las la-cog"></span>
+                    </div>
+                    <div id="myfirstchart" style="height: 350px;"></div>
+                </div>
+                <div class="chart-sales">
+                    <div class="chart-head">
+                        <h3>Supplier</h3>
+                        <span class="las la-ellipsis-h"></span>
+                    </div>
+                    <div id="donut-example" style="height: 350px;"></div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <label class="close-mobile-menu" for="menu-toggle"></label>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <script src="/src/main/webapp/js/dashboard.js"></script>
+</body>
+
+</html>
