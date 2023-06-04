@@ -1,59 +1,57 @@
 package com.web.Model;
 
+import java.util.Date;
+
 public class HocSinh {
-    private String idHS;
-    private String tenHS;
-    private String gioitinh;
-    private String diachi;
+    private int id;
+    private String tenHocSinh;
+    private Date namSinh;
     private String sdt;
     private String email;
-    private String stk;
-    private Account account;
+    private int soDuTaiKhoan;
+    private String username;
+    private String gioiTinh;
+    private String diaChi;
+    private String soTaiKhoan;
 
-    public HocSinh() {
-    }
-
-    public HocSinh(String idHS, String tenHS, String gioitinh, String diachi, String sdt, String email, String stk, Account account) {
-        this.idHS = idHS;
-        this.tenHS = tenHS;
-        this.gioitinh = gioitinh;
-        this.diachi = diachi;
+    public HocSinh(int id, String tenHocSinh, Date namSinh, String sdt, String email, int soDuTaiKhoan, String username,
+                   String gioiTinh, String diaChi, String soTaiKhoan) {
+        this.id = id;
+        this.tenHocSinh = tenHocSinh;
+        this.namSinh = namSinh;
         this.sdt = sdt;
         this.email = email;
-        this.stk = stk;
-        this.account = account;
+        this.soDuTaiKhoan = soDuTaiKhoan;
+        this.username = username;
+        this.gioiTinh = gioiTinh;
+        this.diaChi = diaChi;
+        this.soTaiKhoan = soTaiKhoan;
     }
 
-    public String getIdHS() {
-        return idHS;
+    // Getter và Setter cho các trường
+
+    public int getId() {
+        return id;
     }
 
-    public void setIdHS(String idHS) {
-        this.idHS = idHS;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getTenHS() {
-        return tenHS;
+    public String getTenHocSinh() {
+        return tenHocSinh;
     }
 
-    public void setTenHS(String tenHS) {
-        this.tenHS = tenHS;
+    public void setTenHocSinh(String tenHocSinh) {
+        this.tenHocSinh = tenHocSinh;
     }
 
-    public String getGioitinh() {
-        return gioitinh;
+    public Date getNamSinh() {
+        return namSinh;
     }
 
-    public void setGioitinh(String gioitinh) {
-        this.gioitinh = gioitinh;
-    }
-
-    public String getDiachi() {
-        return diachi;
-    }
-
-    public void setDiachi(String diachi) {
-        this.diachi = diachi;
+    public void setNamSinh(Date namSinh) {
+        this.namSinh = namSinh;
     }
 
     public String getSdt() {
@@ -72,19 +70,43 @@ public class HocSinh {
         this.email = email;
     }
 
-    public String getStk() {
-        return stk;
+    public int getSoDuTaiKhoan() {
+        return soDuTaiKhoan;
     }
 
-    public void setStk(String stk) {
-        this.stk = stk;
+    public void setSoDuTaiKhoan(int soDuTaiKhoan) {
+        this.soDuTaiKhoan = soDuTaiKhoan;
     }
 
-    public Account getAccount() {
-        return account;
+    public String getUsername() {
+        return username;
     }
 
-    public void setAccount(Account account) {
-        this.account = account;
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getGioiTinh() {
+        return gioiTinh;
+    }
+
+    public void setGioiTinh(String gioiTinh) {
+        this.gioiTinh = gioiTinh;
+    }
+
+    public String getDiaChi() {
+        return diaChi;
+    }
+
+    public void setDiaChi(String diaChi) {
+        this.diaChi = diaChi;
+    }
+
+    public String getSoTaiKhoan() {
+        return soTaiKhoan;
+    }
+
+    public void setSoTaiKhoan(String soTaiKhoan) {
+        this.soTaiKhoan = soTaiKhoan;
     }
 }

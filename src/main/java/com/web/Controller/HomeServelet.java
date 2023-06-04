@@ -1,6 +1,7 @@
 package com.web.Controller;
 
 import com.web.Model.GiaSu;
+import com.web.Model.LopHoc;
 import com.web.Service.GiaSuService;
 import com.web.Service.LopHocService;
 
@@ -21,40 +22,35 @@ public class HomeServelet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<GiaSu> list3lv3 = new ArrayList<>();
-        List<GiaSu> list4lv3 = new ArrayList<>();
-        List<GiaSu> giaSuslv3 = giaSuService.getGiaSusByLever(3);
-        for (int i = 0; i < giaSuslv3.size(); i++) {
-            giaSuslv3.get(i).countLH = lopHocService.countLopByGS(giaSuslv3.get(i).getIdGS());
+        List<LopHoc> list3lv3 = new ArrayList<>();
+        List<LopHoc> list4lv3 = new ArrayList<>();
+        List<LopHoc> lopHoclv3 = lopHocService.getLopHocByLever(3, false);
+        for (int i = 0; i < lopHoclv3.size(); i++) {
             if (i < 3) {
-                list3lv3.add(giaSuslv3.get(i));
+                list3lv3.add(lopHoclv3.get(i));
             } else if (i < 7) {
-                list4lv3.add(giaSuslv3.get(i));
+                list4lv3.add(lopHoclv3.get(i));
             }
         }
 
-        List<GiaSu> list3lv2 = new ArrayList<>();
-        List<GiaSu> list4lv2 = new ArrayList<>();
-        List<GiaSu> giaSuslv2 = giaSuService.getGiaSusByLever(2);
-        for (int i = 0; i < giaSuslv2.size(); i++) {
-            giaSuslv2.get(i).countLH = lopHocService.countLopByGS(giaSuslv2.get(i).getIdGS());
-
+        List<LopHoc> list3lv2 = new ArrayList<>();
+        List<LopHoc> list4lv2 = new ArrayList<>();
+        List<LopHoc> lopHoclv2 = lopHocService.getLopHocByLever(2, false);
+        for (int i = 0; i < lopHoclv2.size(); i++) {
             if (i < 3) {
-                list3lv2.add(giaSuslv2.get(i));
+                list3lv2.add(lopHoclv2.get(i));
             } else if (i < 7)
-                list4lv2.add(giaSuslv2.get(i));
+                list4lv2.add(lopHoclv2.get(i));
         }
 
-        List<GiaSu> list3lv1 = new ArrayList<>();
-        List<GiaSu> list4lv1 = new ArrayList<>();
-        List<GiaSu> giaSuslv1 = giaSuService.getGiaSusByLever(1);
-        for (int i = 0; i < giaSuslv1.size(); i++) {
-            giaSuslv1.get(i).countLH = lopHocService.countLopByGS(giaSuslv1.get(i).getIdGS());
-
+        List<LopHoc> list3lv1 = new ArrayList<>();
+        List<LopHoc> list4lv1 = new ArrayList<>();
+        List<LopHoc> lopHoclv1 = lopHocService.getLopHocByLever(1, false);
+        for (int i = 0; i < lopHoclv1.size(); i++) {
             if (i < 3) {
-                list3lv1.add(giaSuslv1.get(i));
+                list3lv1.add(lopHoclv1.get(i));
             } else if (i < 7)
-                list4lv1.add(giaSuslv1.get(i));
+                list4lv1.add(lopHoclv1.get(i));
         }
         req.setAttribute("list3lv3", list3lv3);
         req.setAttribute("list4lv3", list4lv3);

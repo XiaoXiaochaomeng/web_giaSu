@@ -125,28 +125,26 @@
 </head>
 <body>
 <div class="container emp-profile">
-    <h1>Create Lớp Học.</h1>
-    <form method="post">
-        <input placeholder="id" name="id" value="${lopHoc.id}" hidden="hidden"><br>
-        <input placeholder="name" name="name" value="${lopHoc.tenLopHoc}"><br>
-        <input placeholder="usernameHS" name="usernameHS" value="${lopHoc.usernameHocSinh}" hidden="hidden"><br>
-        <input placeholder="hour" name="hour" value="${lopHoc.gioHoc}"><br>
-        <select name="lever" value="${lopHoc.lever}">
-            <option value="1">Cấp 1</option>
-            <option value="2">Cấp 2</option>
-            <option value="3">Cấp 3</option>
-        </select>
-        <input placeholder="date" name="date" type="date" value="${lopHoc.ngayHoc}"><br>
-        <input placeholder="price" name="price" value="${lopHoc.hocPhi}"><br>
-        <input placeholder="priceGS" name="priceGS" value="${lopHoc.phiGiaSu}"><br>
-        <input placeholder="content" name="content" value="${lopHoc.moTa}"><br>
-        <input placeholder="content" name="img" value="${lopHoc.hinhAnh}"><br>
+    <h1>Danh sách tất cả lớp học</h1>
+    <div class="row">
+        <c:forEach var="lh" items="${lopHocs}">
+            <div class="col 3 table_thpt_item" align="center">
+                <img src="https://img6.thuthuatphanmem.vn/uploads/2022/02/13/hinh-anh-lop-hoc-dep-nhat_011959587.jpg"
+                     alt="" width="200" height="160">
+                <br>
+                <hr>
+                <button class="btn btn-success">${lh.tenLopHoc}</button>
+                <p>${lh.ngayHoc} - ${lh.hocPhi}$</p>
+                <p>${lh.moTa}</p>
+                <hr>
+            </div>
+        </c:forEach>
 
-        <button type="submit" class="btn btn-success">Submit</button>
-    </form>
-
+    </div>
 </div>
 
 </body>
 </html>
+<script>
 
+</script>

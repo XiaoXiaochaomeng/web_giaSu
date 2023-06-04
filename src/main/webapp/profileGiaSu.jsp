@@ -129,16 +129,22 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="profile-img">
-                    <img src="${giaSu.img}" alt=""/>
+                    <img src="${giaSu.hinhAnh}" alt=""/>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="profile-head">
                     <h5>
-                        ${giaSu.tenGS}
+                        ${giaSu.tenGiaSu}
                     </h5>
                     <h6>
-                        ${giaSu.getMonHoc().getTenMH()}
+                        ${giaSu.email}
+                    </h6>
+                    <h6>
+                        Số lớp học : ${giaSu.countLH}
+                    </h6>
+                    <h6>
+                        Số học viên :${giaSu.countHV}
                     </h6>
                     <p class="proile-rating">RANKINGS : <span>8/10</span></p>
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -174,7 +180,7 @@
                                 <label>User Id</label>
                             </div>
                             <div class="col-md-6">
-                                <p>${giaSu.idGS}</p>
+                                <p>${giaSu.id}</p>
                             </div>
                         </div>
                         <div class="row">
@@ -182,7 +188,7 @@
                                 <label>Name</label>
                             </div>
                             <div class="col-md-6">
-                                <p>${giaSu.tenGS}</p>
+                                <p>${giaSu.tenGiaSu}</p>
                             </div>
                         </div>
                         <div class="row">
@@ -206,7 +212,7 @@
                                 <label>Profession</label>
                             </div>
                             <div class="col-md-6">
-                                <p>${giaSu.monHoc.tenMH}</p>
+                                <p>${giaSu.diaChi}</p>
                             </div>
                         </div>
                     </div>
@@ -270,9 +276,9 @@
                      alt="" width="200" height="160">
                 <br>
                 <hr>
-                <button class="btn btn-success" onclick="dangky(${lh.idLH})">${lh.tenLH}</button>
-                <p>${lh.lichhoc} - ${lh.hocphi}$</p>
-                <p>${lh.mota}</p>
+                <button class="btn btn-success">${lh.tenLopHoc}</button>
+                <p>${lh.ngayHoc} - ${lh.hocPhi}$</p>
+                <p>${lh.moTa}</p>
                 <hr>
             </div>
         </c:forEach>

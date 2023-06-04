@@ -127,11 +127,19 @@
 <div class="container emp-profile">
     <h1>Create Lớp Học.</h1>
     <form method="post" action="/managerLopHoc?action=create">
-        <input placeholder="id" name="id"><br>
+<%--        <input placeholder="id" name="id"><br>--%>
         <input placeholder="name" name="name"><br>
+        <input placeholder="hour" type="number" name="hour"><br>
+        <select name="lever">
+            <option value="1">Cấp 1</option>
+            <option value="2">Cấp 2</option>
+            <option value="3">Cấp 3</option>
+        </select>
         <input placeholder="date" name="date" type="date"><br>
         <input placeholder="price" name="price" type="number"><br>
+        <input placeholder="priceGS" name="priceGS" type="number"><br>
         <input placeholder="content" name="content"><br>
+        <input placeholder="img" name="img"><br>
         <button type="submit" class="btn btn-success">Submit</button>
     </form>
 

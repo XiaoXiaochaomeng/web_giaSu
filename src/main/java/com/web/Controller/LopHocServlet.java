@@ -24,17 +24,17 @@ public class LopHocServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession();
-        Account account = (Account) session.getAttribute("account");
-        List<LopHoc> lopHocs = new ArrayList<>();
-        if (account.getPosition().equals("hv")){
-            lopHocs = lopHocService.getByUserNameHS(account.getUsername());
-        } else if (account.getPosition().equals("gv")){
-            GiaSu giaSu = giaSuService.getGiaSuByUserName(account.getUsername());
-            lopHocs = lopHocService.getlopHocByIdGS(giaSu.getIdGS());
-        }
-        req.setAttribute("lopHocs", lopHocs);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/lopHoc.jsp");
-        dispatcher.forward(req, resp);
+//        HttpSession session = req.getSession();
+//        Account account = (Account) session.getAttribute("account");
+//        List<LopHoc> lopHocs = new ArrayList<>();
+//        if (account.getPosition().equals("hv")){
+//            lopHocs = lopHocService.getByUserNameHS(account.getUsername());
+//        } else if (account.getPosition().equals("gv")){
+//            GiaSu giaSu = giaSuService.getGiaSuByUserName(account.getUsername());
+//            lopHocs = lopHocService.getlopHocByIdGS(giaSu.getIdGS());
+//        }
+//        req.setAttribute("lopHocs", lopHocs);
+//        RequestDispatcher dispatcher = req.getRequestDispatcher("/MyLopHoc.jsp");
+//        dispatcher.forward(req, resp);
     }
 }

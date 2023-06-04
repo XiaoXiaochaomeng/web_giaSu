@@ -46,12 +46,12 @@ public class RegisterServlet extends HttpServlet {
                 response.sendRedirect("/register?mess=rePass");
             } else {
                 AccountDao accountDao = new AccountDao();
-                Account a = accountDao.getByUsername(user);
+                Account a = accountDao.getAccountByUsername(user);
                 if (a != null) {
                     response.sendRedirect("/register?mess=username");
                 } else {
                     Account account = new Account(user, pass, "hv");
-                    accountDao.insert(account);
+                    accountDao.createAccount(account);
                     response.sendRedirect("/login");
                 }
             }

@@ -1,71 +1,61 @@
 package com.web.Model;
 
+import java.util.Date;
+
 public class GiaSu {
-    private String idGS;
-    private String tenGS;
-    private String gioitinh;
-    private String img;
-    private String diachi;
+    private int id;
+    private String tenGiaSu;
+    private Date namSinh;
     private String sdt;
     private String email;
-    private String stk;
-    private MonHoc monHoc;
-    private Account account;
+    private String soTaiKhoan;
+    private String username;
+    private String gioiTinh;
+    private String diaChi;
+    private int chuaThanhToan;
+    private String hinhAnh;
+    private int soDuTaiKhoan;
 
-    public GiaSu() {
-    }
-
-    public GiaSu(String idGS, String tenGS, String gioitinh, String img, String diachi, String sdt, String email, String stk, MonHoc monHoc, Account account) {
-        this.idGS = idGS;
-        this.tenGS = tenGS;
-        this.gioitinh = gioitinh;
-        this.img = img;
-        this.diachi = diachi;
+    public GiaSu(int id, String tenGiaSu, Date namSinh, String sdt, String email, String soTaiKhoan, String username,
+                 String gioiTinh, String diaChi, int chuaThanhToan, String hinhAnh, int soDuTaiKhoan) {
+        this.id = id;
+        this.tenGiaSu = tenGiaSu;
+        this.namSinh = namSinh;
         this.sdt = sdt;
         this.email = email;
-        this.stk = stk;
-        this.monHoc = monHoc;
-        this.account = account;
+        this.soTaiKhoan = soTaiKhoan;
+        this.username = username;
+        this.gioiTinh = gioiTinh;
+        this.diaChi = diaChi;
+        this.chuaThanhToan = chuaThanhToan;
+        this.hinhAnh = hinhAnh;
+        this.soDuTaiKhoan = soDuTaiKhoan;
     }
 
-    public String getImg() {
-        return img;
+    // Getter và Setter cho các trường
+
+    public int getId() {
+        return id;
     }
 
-    public void setImg(String img) {
-        this.img = img;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getIdGS() {
-        return idGS;
+    public String getTenGiaSu() {
+        return tenGiaSu;
     }
 
-    public void setIdGS(String idGS) {
-        this.idGS = idGS;
+    public void setTenGiaSu(String tenGiaSu) {
+        this.tenGiaSu = tenGiaSu;
     }
 
-    public String getTenGS() {
-        return tenGS;
+    public Date getNamSinh() {
+        return namSinh;
     }
 
-    public void setTenGS(String tenGS) {
-        this.tenGS = tenGS;
-    }
-
-    public String getGioitinh() {
-        return gioitinh;
-    }
-
-    public void setGioitinh(String gioitinh) {
-        this.gioitinh = gioitinh;
-    }
-
-    public String getDiachi() {
-        return diachi;
-    }
-
-    public void setDiachi(String diachi) {
-        this.diachi = diachi;
+    public void setNamSinh(Date namSinh) {
+        this.namSinh = namSinh;
     }
 
     public String getSdt() {
@@ -84,39 +74,64 @@ public class GiaSu {
         this.email = email;
     }
 
-    public String getStk() {
-        return stk;
+    public String getSoTaiKhoan() {
+        return soTaiKhoan;
     }
 
-    public void setStk(String stk) {
-        this.stk = stk;
+    public void setSoTaiKhoan(String soTaiKhoan) {
+        this.soTaiKhoan = soTaiKhoan;
     }
 
-    public MonHoc getMonHoc() {
-        return monHoc;
+    public String getUsername() {
+        return username;
     }
 
-    public void setMonHoc(MonHoc monHoc) {
-        this.monHoc = monHoc;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public Account getAccount() {
-        return account;
+    public String getGioiTinh() {
+        return gioiTinh;
     }
 
-    public void setAccount(Account account) {
-        this.account = account;
-    }
-    public int countHV;
-    public int countLH;
-
-    public int getCountHV() {
-        return countHV;
+    public void setGioiTinh(String gioiTinh) {
+        this.gioiTinh = gioiTinh;
     }
 
-    public void setCountHV(int countHV) {
-        this.countHV = countHV;
+    public String getDiaChi() {
+        return diaChi;
     }
+
+    public void setDiaChi(String diaChi) {
+        this.diaChi = diaChi;
+    }
+
+    public int getChuaThanhToan() {
+        return chuaThanhToan;
+    }
+
+    public void setChuaThanhToan(int chuaThanhToan) {
+        this.chuaThanhToan = chuaThanhToan;
+    }
+
+    public String getHinhAnh() {
+        return hinhAnh;
+    }
+
+    public void setHinhAnh(String hinhAnh) {
+        this.hinhAnh = hinhAnh;
+    }
+
+    public int getSoDuTaiKhoan() {
+        return soDuTaiKhoan;
+    }
+
+    public void setSoDuTaiKhoan(int soDuTaiKhoan) {
+        this.soDuTaiKhoan = soDuTaiKhoan;
+    }
+
+    private int countLH = 0;
+    private int countHV = 0;
 
     public int getCountLH() {
         return countLH;
@@ -124,5 +139,13 @@ public class GiaSu {
 
     public void setCountLH(int countLH) {
         this.countLH = countLH;
+    }
+
+    public int getCountHV() {
+        return countHV;
+    }
+
+    public void setCountHV(int countHV) {
+        this.countHV = countHV;
     }
 }

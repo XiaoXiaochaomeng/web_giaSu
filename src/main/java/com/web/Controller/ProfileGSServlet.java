@@ -19,12 +19,14 @@ import java.util.List;
 public class ProfileGSServlet extends HttpServlet {
     GiaSuService giaSuService = new GiaSuService();
     LopHocService lopHocService = new LopHocService();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String idGS = req.getParameter("id");
-        GiaSu giaSu = giaSuService.getGiaSuById(idGS);
-        List<LopHoc> lopHocs = lopHocService.getlopHocByIdGS(giaSu.getIdGS());
-
+        String username = req.getParameter("username");
+        GiaSu giaSu = giaSuService.getGiaSuByUserName(username);
+        List<LopHoc> lopHocs = lopHocService.getlopHocByUsernameGS(giaSu.getUsername());
+        giaSu.setCountHV(lopHocService.countHocSinhInGS(giaSu.getUsername()));
+        giaSu.setCountLH(giaSuService.countHocSinhByGiaSuUsername(giaSu.getUsername()));
         req.setAttribute("giaSu", giaSu);
         req.setAttribute("lopHocs", lopHocs);
         RequestDispatcher dispatcher = req.getRequestDispatcher("/profileGiaSu.jsp");
