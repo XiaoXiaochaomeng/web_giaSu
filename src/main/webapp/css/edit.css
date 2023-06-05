@@ -1,0 +1,67 @@
+body {
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+}
+
+.emp-profile {
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+
+.container {
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container input[type="name"],
+.container input[type="content"],
+.container input[type="img"],
+.container input[type="date"],
+.container input[type="number"],
+.container textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    resize: vertical;
+}
+
+.container button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.container button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
